@@ -15,3 +15,8 @@ const { people, ages } = require('./people')
 
 // console.log(ages);
 // console.log(people);
+
+
+// file system 
+const os = require('os')
+console.log(os);

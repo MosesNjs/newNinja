@@ -8,7 +8,7 @@ module.exports = {
     people, // people is people : people. 
     // you can do that when exporting something 
     // in a variable with the same name  
-    ages // same with ages as above 
+    // ages // same with ages as above 
 }
 
 
@@ -17,6 +17,5 @@ it should have a file with a boys variable in it
 log it to the console 
 export it 
 import it into another file 
-
-
 */
+

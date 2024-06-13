@@ -1,2 +1,1 @@
-# newNinja
-A new ninja is born
+# newNinja - A new ninja is born

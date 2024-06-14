@@ -18,4 +18,3 @@ log it to the console
 export it 
 import it into another file 
 */
-

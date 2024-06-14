@@ -6,15 +6,23 @@ const readStream = fs.createReadStream('newNinja/README.md', {encoding: 'utf8'})
 const writeStream = fs.createWriteStream('newNinja/blog3.txt')
 
 
-// readStream.on('data', (chunk) => {
-//     console.log('---NEW CHUNK---');
-//     console.log(chunk.toString()); // to string makes it readable
+readStream.on('data', (chunk) => {
+    console.log('---NEW CHUNK---');
+    console.log(chunk.toString()); // to string makes it readable
 //     // you can also do encoding to achieve the same results
-//     writeStream.write('\n NEW CHUNK \n')
-//     writeStream.write(chunk)
-// })
+    writeStream.write('\n NEW CHUNK \n')
+    writeStream.write(chunk)
+})
 // this reads, logs what it read to the console 
 // then writes it into a new file.
 
 // there's an easier way- Piping 
 readStream.pipe(writeStream)
+
+// create a readstream 
+// read from a file to another 
+
+// create a write stream 
+// write what you read to a file
+
+// pipe from one file to another 
